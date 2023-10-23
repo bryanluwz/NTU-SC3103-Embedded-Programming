@@ -1,0 +1,2135 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Bryan Lu, NTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\bryan\Documents\GitHub\NTU-SC3103-Embedded-Programming\Lab 2\Lab2.uvproj
+Project File Date:  09/17/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Lab 2'
+STM32F4xx_Driver/src/stm32f4xx_i2c.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_i2c.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_i2c.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_i2c.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_i2c.c...
+SYSTEM/sys/sys.c(1): warning: In file included from...
+./SYSTEM/sys/sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/sys/sys.c(1): warning: In file included from...
+./SYSTEM/sys/sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/sys/sys.c(1): warning: In file included from...
+./SYSTEM/sys/sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling sys.c...
+STM32F4xx_Driver/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_syscfg.c(50): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_syscfg.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_syscfg.c...
+CORE/stm32f4xx_it.c(31): warning: In file included from...
+./CORE/stm32f4xx_it.h(37): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+CORE/stm32f4xx_it.c(31): warning: In file included from...
+./CORE/stm32f4xx_it.h(37): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+CORE/stm32f4xx_it.c(31): warning: In file included from...
+./CORE/stm32f4xx_it.h(37): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_it.c...
+STM32F4xx_Driver/src/misc.c(76): warning: In file included from...
+./STM32F4xx_Driver/inc\misc.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/misc.c(76): warning: In file included from...
+./STM32F4xx_Driver/inc\misc.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/misc.c(76): warning: In file included from...
+./STM32F4xx_Driver/inc\misc.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling misc.c...
+STM32F4xx_Driver/src/stm32f4xx_usart.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_usart.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_usart.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_usart.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_usart.c(92): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_usart.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_usart.c...
+SYSTEM/sys/system.c(1): warning: In file included from...
+./SYSTEM/sys/system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/sys/system.c(1): warning: In file included from...
+./SYSTEM/sys/system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/sys/system.c(1): warning: In file included from...
+./SYSTEM/sys/system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling system.c...
+main.c(1): warning: In file included from...
+./SYSTEM/sys\system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+main.c(1): warning: In file included from...
+./SYSTEM/sys\system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+main.c(1): warning: In file included from...
+./SYSTEM/sys\system.h(6): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling main.c...
+STM32F4xx_Driver/src/stm32f4xx_tim.c(119): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_tim.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_tim.c(119): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_tim.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_tim.c(119): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_tim.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_tim.c...
+SYSTEM/delay/delay.c(1): warning: In file included from...
+./SYSTEM/delay/delay.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/delay/delay.c(1): warning: In file included from...
+./SYSTEM/delay/delay.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+SYSTEM/delay/delay.c(1): warning: In file included from...
+./SYSTEM/delay/delay.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling delay.c...
+CORE/system_stm32f4xx.c(262): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+CORE/system_stm32f4xx.c(262): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+CORE/system_stm32f4xx.c(262): warning: In file included from...
+./CORE/stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling system_stm32f4xx.c...
+STM32F4xx_Driver/src/stm32f4xx_pwr.c(38): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_pwr.c(38): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_pwr.c(38): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_pwr.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_pwr.c...
+Hardware/led.c(1): warning: In file included from...
+./Hardware/led.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/led.c(1): warning: In file included from...
+./Hardware/led.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/led.c(1): warning: In file included from...
+./Hardware/led.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling led.c...
+STM32F4xx_Driver/src/stm32f4xx_gpio.c(84): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_gpio.c(84): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_gpio.c(84): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_gpio.h(38): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_gpio.c...
+STM32F4xx_Driver/src/stm32f4xx_rcc.c(59): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_rcc.c(59): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+STM32F4xx_Driver/src/stm32f4xx_rcc.c(59): warning: In file included from...
+./STM32F4xx_Driver/inc\stm32f4xx_rcc.h(37): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling stm32f4xx_rcc.c...
+Hardware/buz.c(1): warning: In file included from...
+./Hardware/buz.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/buz.c(1): warning: In file included from...
+./Hardware/buz.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/buz.c(1): warning: In file included from...
+./Hardware/buz.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling buz.c...
+Hardware/oled.c(1): warning: In file included from...
+./Hardware/oled.h(11): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/oled.c(1): warning: In file included from...
+./Hardware/oled.h(11): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/oled.c(1): warning: In file included from...
+./Hardware/oled.h(11): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling oled.c...
+Hardware/show.c(1): warning: In file included from...
+./Hardware/show.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/show.c(1): warning: In file included from...
+./Hardware/show.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+Hardware/show.c(1): warning: In file included from...
+./Hardware/show.h(3): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling show.c...
+FreeRTOS_CORE/croutine.c(29): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/croutine.c(29): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/croutine.c(29): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling croutine.c...
+FreeRTOS_CORE/event_groups.c(38): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/event_groups.c(38): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/event_groups.c(38): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling event_groups.c...
+FreeRTOS_CORE/list.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/list.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/list.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling list.c...
+FreeRTOS_CORE/queue.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/queue.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/queue.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling queue.c...
+FreeRTOS_CORE/tasks.c(39): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/tasks.c(39): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/tasks.c(39): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling tasks.c...
+FreeRTOS_CORE/timers.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/timers.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_CORE/timers.c(37): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling timers.c...
+FreeRTOS_PORTABLE/heap_4.c(45): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_PORTABLE/heap_4.c(45): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_PORTABLE/heap_4.c(45): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling heap_4.c...
+FreeRTOS_PORTABLE/port.c(34): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(129): error: expected identifier or '('
+__attribute__((section(".rev16_text"))) __STATIC_INLINE __ASM uint32_t __REV16(uint32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_PORTABLE/port.c(34): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(169): warning: In file included from...
+./CORE\core_cmInstr.h(144): error: expected identifier or '('
+__attribute__((section(".revsh_text"))) __STATIC_INLINE __ASM int32_t __REVSH(int32_t value)
+                                                        ^
+./CORE/core_cm4.h(80): note: expanded from macro '__ASM'
+  #define __ASM            __asm                                      /*!< asm keyword for ARM Compiler          */
+                           ^
+FreeRTOS_PORTABLE/port.c(34): warning: In file included from...
+./FreeRTOS_CORE/include\FreeRTOS.h(59): warning: In file included from...
+./FreeRTOS_CORE/include/FreeRTOSConfig.h(76): warning: In file included from...
+./SYSTEM/sys\sys.h(3): warning: In file included from...
+./CORE\stm32f4xx.h(470): warning: In file included from...
+./CORE/core_cm4.h(170): warning: In file included from...
+./CORE\core_cmFunc.h(66): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(79): error: unknown register name 'control' in asm
+  register uint32_t __regControl         __ASM("control");
+                                               ^
+./CORE\core_cmFunc.h(92): error: unknown register name 'ipsr' in asm
+  register uint32_t __regIPSR          __ASM("ipsr");
+                                             ^
+./CORE\core_cmFunc.h(105): error: unknown register name 'apsr' in asm
+  register uint32_t __regAPSR          __ASM("apsr");
+                                             ^
+./CORE\core_cmFunc.h(118): error: unknown register name 'xpsr' in asm
+  register uint32_t __regXPSR          __ASM("xpsr");
+                                             ^
+./CORE\core_cmFunc.h(131): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(144): error: unknown register name 'psp' in asm
+  register uint32_t __regProcessStackPointer  __ASM("psp");
+                                                    ^
+./CORE\core_cmFunc.h(157): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(170): error: unknown register name 'msp' in asm
+  register uint32_t __regMainStackPointer     __ASM("msp");
+                                                    ^
+./CORE\core_cmFunc.h(183): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(196): error: unknown register name 'primask' in asm
+  register uint32_t __regPriMask         __ASM("primask");
+                                               ^
+./CORE\core_cmFunc.h(227): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(240): error: unknown register name 'basepri' in asm
+  register uint32_t __regBasePri         __ASM("basepri");
+                                               ^
+./CORE\core_cmFunc.h(253): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(266): error: unknown register name 'faultmask' in asm
+  register uint32_t __regFaultMask       __ASM("faultmask");
+                                               ^
+./CORE\core_cmFunc.h(284): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+./CORE\core_cmFunc.h(301): error: unknown register name 'fpscr' in asm
+  register uint32_t __regfpscr         __ASM("fpscr");
+                                             ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling port.c...
+".\Objects\Lab1.axf" - 494 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
