@@ -28,9 +28,10 @@ int main()
 	T2ret = pthread_create(&thread2, NULL, print_message, (void *)str2);
 
 	// Main waits for both thread to finish
-	pthread_join(thread1, NULL);
-	pthread_join(thread2, NULL);
-
+//	pthread_join(thread1, NULL);
+//	pthread_join(thread2, NULL);
+	
 	printf("Thread 1 and 2 returns: %d, %d \n", T1ret, T2ret);
+	sleep(1);
 	return 0;
 }

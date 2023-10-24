@@ -15,17 +15,22 @@ int g_var1 = 0;
 
 void *inc_gv()
 {
-	pthread_mutex_lock(&mutexA);
 	int i, j;
 	for (i = 0; i < 10; i++)
 	{
+		pthread_mutex_lock(&mutexA);
+		
 		g_var1++; // increment the global variable
 		for (j = 0; j < 5000000; j++)
 			; // delay loop
 		printf("%d ", g_var1);
 		fflush(stdout);
+		
+		pthread_mutex_unlock(&mutexA);
+		
+		for (j = 0; j < 5000000; j++)
+			; // delay loop
 	}
-	pthread_mutex_unlock(&mutexA);
 }
 
 int main()

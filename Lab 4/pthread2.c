@@ -17,7 +17,7 @@ void *inc_gv()
 	{
 		g_var1++; // increment the global variable
 		for (j = 0; j < 5000000; j++)
-			; // delay loop
+			;
 		printf("%d ", g_var1);
 		fflush(stdout);
 	}

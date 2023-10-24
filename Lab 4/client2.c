@@ -11,11 +11,7 @@
 #include <string.h>
 #include <pthread.h>
 
-#define THREAD_COUNT 3
-
-
-struct hostent *server;
-int port;
+#define THREAD_COUNT 1
 
 void error(char *error_message)
 {
@@ -28,38 +24,33 @@ void error(char *error_message)
  *
  * @param sockfd
  */
-void handle_input()
+void handle_input(int sockfd)
 {
 	char buffer[256];
 	int n;
-	struct sockaddr_in serv_addr;
 
-	// Create sockfd
-	int sockfd = socket(AF_INET, SOCK_STREAM, 0);
+	printf("Please enter an integer: ");
 
-	if (sockfd < 0)
+	// Make sure input is a number
+	while (fgets(buffer, 255, stdin) != NULL)
 	{
-		error("Error opening socket :/\n");
-	}
-
-	// Clear server address structure for a clean start
-	memset(((char *)&serv_addr), 0, sizeof(serv_addr));
-
-	// Set address family, copy server address to server address structure, set port number
-	serv_addr.sin_family = AF_INET;
-	bcopy((char *)server->h_addr, (char *)&serv_addr.sin_addr.s_addr, server->h_length);
-	serv_addr.sin_port = htons(port);
-
-	// Connect, and start sending and reading message
-	if (connect(sockfd, &serv_addr, sizeof(serv_addr)) < 0)
-	{
-		error("Error connecting :/\n");
+		char *endptr;
+		strtod(buffer, &endptr);
+		if (endptr == buffer || *endptr != '\n')
+		{
+			// MF input is not a number
+			printf("Invalid input >:/\n");
+			printf("Please enter an integer: ");
+		}
+		else
+		{
+			break;
+		}
 	}
 
 	// Print a random number between 0 and 100 every time, with random seed
-
-	int number = (rand() * getpid()) % 100;
-	sprintf(buffer, "%d\0", number);
+	// srand(time(NULL));
+	// sprintf(buffer, "%d\0", random() % 100);
 	printf("Sending %s to server\n", buffer);
 
 	// Input is valid, send to server
@@ -77,18 +68,17 @@ void handle_input()
 	{
 		error("Error reading from socket :/\n");
 	}
-	printf("Server response to number %d: %s\n", number, buffer);
-	
-	close(sockfd);
+	printf("Server response: %s\n", buffer);
 }
 
 int main(int argc, char *argv[])
 {
 	// Initialise and stuff
-	int n;
+	int sockfd, port, n;
+	struct sockaddr_in serv_addr;
+	struct hostent *server;
 	char buffer[256];
-	srand(time(NULL));
-	
+
 	if (argc < 3)
 	{
 		error("Usage: client [hostname] [port]\n");
@@ -96,6 +86,12 @@ int main(int argc, char *argv[])
 
 	// Create socket and port, and initialise the server
 	port = atoi(argv[2]);
+	sockfd = socket(AF_INET, SOCK_STREAM, 0);
+
+	if (sockfd < 0)
+	{
+		error("Error opening socket :/\n");
+	}
 
 	server = gethostbyname(argv[1]);
 
@@ -103,9 +99,6 @@ int main(int argc, char *argv[])
 	{
 		error("Error, no such host :/\n");
 	}
-	
-	/*// Create sockfd
-	int sockfd = socket(AF_INET, SOCK_STREAM, 0);
 
 	// Clear server address structure for a clean start
 	memset(((char *)&serv_addr), 0, sizeof(serv_addr));
@@ -119,7 +112,7 @@ int main(int argc, char *argv[])
 	if (connect(sockfd, &serv_addr, sizeof(serv_addr)) < 0)
 	{
 		error("Error connecting :/\n");
-	}*/
+	}
 
 	// Fork into three child processes to handle user input
 	int i;
@@ -128,18 +121,24 @@ int main(int argc, char *argv[])
 		pid_t pid = fork();
 		if (pid == 0)
 		{
-			handle_input();
+			handle_input(sockfd);
 			exit(0);
 		}
 
-		usleep(100000);
+		// Wait for child process to finish before forking again
+		wait(NULL);
+
+		printf("Child process %d finished\n\n", i);
+
+		sleep(1);
 	}
 
 	// Wait for child processes to finish
-	for (i = 0; i < THREAD_COUNT; i++)
-	{
- 		wait(NULL);
-	}
+	// for (i = 0; i < 3; i++)
+	// {
+	// 	wait(NULL);
+	// }
 
+	close(sockfd);
 	return 0;
 }

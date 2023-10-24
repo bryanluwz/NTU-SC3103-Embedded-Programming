@@ -13,8 +13,8 @@
 #include <pthread.h>
 
 // Declare global variables and stuff
-#define BUFFER_SIZE 3
-#define THREAD_COUNT 3
+#define BUFFER_SIZE 10
+#define THREAD_COUNT 1
 
 sem_t empty;
 sem_t full;
@@ -57,8 +57,6 @@ void *handle_client(void *arg)
 	// Place client request in buffer
 	sem_wait(&empty);
 	pthread_mutex_lock(&mutex);
-//	usleep(10000);
-	sleep(3);
 	client_buffer[in] = newsockfd;
 	in = (in + 1) % BUFFER_SIZE;
 
@@ -68,7 +66,7 @@ void *handle_client(void *arg)
 	sem_wait(&full);
 	n = write(newsockfd, buffer, strlen(buffer));
 
-	printf("Sent message response to %d: %s\n", number, buffer);
+	printf("Sent message: %s\n", buffer);
 
 	if (n < 0)
 	{
@@ -77,7 +75,7 @@ void *handle_client(void *arg)
 
 	printf("Client disconnected\n");
 
-	close(newsockfd);
+	// close(newsockfd);
 
 	sem_post(&empty);
 
@@ -119,7 +117,7 @@ int main(int argc, char *argv[])
 	}
 
 	// Listen for incoming connections
-	listen(sockfd, THREAD_COUNT + 1);
+	listen(sockfd, 2);
 	clilen = sizeof(cli_addr);
 
 	// Initialise semaphore and mutex
@@ -128,25 +126,22 @@ int main(int argc, char *argv[])
 	pthread_mutex_init(&mutex, NULL);
 
 	// Spawn threads to handle client connections
-	pthread_t threads[THREAD_COUNT + 1];
-	
-	// Connect here
-//	for (int i = 0; i < THREAD_COUNT + 1; i++) {
-	while(1){
-		newsockfd = accept(sockfd, (struct socketaddr *)&cli_addr, &clilen);
-		if (newsockfd < 0)
-		{
-			break;
-			error("Error accepting connection :/\n");
-		}
-		sleep(1);
-		pthread_create(&threads[in], NULL, handle_client, (void *)&newsockfd);
+	pthread_t threads[THREAD_COUNT];
+	int thread_args[THREAD_COUNT];
+
+	// Connect here, don't need to reopen and close
+	newsockfd = accept(sockfd, (struct socketaddr *)&cli_addr, &clilen);
+
+	if (newsockfd < 0)
+	{
+		error("Error accepting connection :/\n");
 	}
 
-	/*for (int i = 0; i < THREAD_COUNT; i++)
+	for (int i = 0; i < THREAD_COUNT; i++)
 	{
-		
-	}*/
+		thread_args[i] = newsockfd;
+		pthread_create(&threads[i], NULL, handle_client, (void *)&thread_args[i]);
+	}
 
 	for (int i = 0; i < THREAD_COUNT; i++)
 	{
