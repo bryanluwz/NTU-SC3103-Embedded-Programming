@@ -9,7 +9,8 @@ static int __init hello_init(void)
 	printk(KERN_ALERT "Hello from kernel world\n");
 	return 0; // 0 for success, negative for failure
 }
-Static void __exit hello_exit(void)
+
+static void __exit hello_exit(void)
 {
 	printk(KERN_ALERT "Goodbye from kernel world\n");
 }
